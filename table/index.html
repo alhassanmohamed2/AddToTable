@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.min.js" defer></script>
+    <link rel="stylesheet" href="style.min.css" type="text/css">
+    <title>TP</title>
+</head>
+
+<body>
+    <h1 class="mail-title">Please choose the elements of your order</h1>
+    <div class="center">
+        <div class="main-container">
+            <div class="slider-btn">
+                <input type="button" value="<" class="backward btn-slider">
+                <input type="button" value=">" class="forward btn-slider">
+            </div>
+
+            <div class="slider">
+                <div class="slider-div active">
+
+                    <div class="be-block">
+                        <label for="">Between: </label>
+                        <select name="" id="first-opt">
+                        <option value="">TDI</option>
+                        <option value="">TDM</option>
+                        <option value="">SORTING</option>
+                    </select>
+                    </div>
+                    <div class="be-block">
+                        <label for="">Price : </label>
+                        <input type="number" class="prix-first" min="1">
+                    </div>
+
+                    <div class="be-block">
+                        <label for="">No. Of Persons : </label>
+                        <input type="number" class="person-first" min="1">
+                    </div>
+
+                </div>
+
+                <!-- ---------------------------------------------------------------------- -->
+                <div class="slider-div ">
+
+                    <div class="be-block">
+                        <label for="">Plat : </label>
+                        <select name="" id="second-opt">
+                    <option value="">Friture poissions</option>
+                    <option value="">Panini viande hâchée</option>
+                </select>
+                    </div>
+                    <div class="be-block">
+                        <label for="">Price : </label>
+                        <input type="number" class="prix-second" min="1">
+                    </div>
+                    <div class="be-block">
+                        <label for="">No. Of Persons : </label>
+                        <input type="number" class="person-second" min="1">
+                    </div>
+                </div>
+                <!-- ---------------------------------------------------------->
+                <div class="slider-div">
+
+                    <div class="be-block">
+                        <label for="">Dessert : </label>
+                        <select name="" id="third-opt">
+                    <option value="">Candy</option>
+                    <option value="">Cream</option>
+                </select>
+                    </div>
+                    <div class="be-block">
+                        <label for="">Price : </label>
+                        <input type="number" class="prix-third" min="1">
+                    </div>
+                    <div class="be-block">
+                        <label for="">No. Of Persons : </label>
+                        <input type="number" class="person-third" min="1">
+                    </div>
+
+
+                </div>
+            </div>
+            <input type="button" value="ADD Order" class="action-btn">
+            <input type="button" value="Clear" class="action-btn clear">
+
+            <table class="order-table">
+                <th>No. OF Order</th>
+                <th>Type</th>
+                <th>Quantite</th>
+                <th>Price</th>
+            </table>
+            <input type="button" value="Calc Sum" class="sum">
+            <label for="" class="sum-lab"></label>
+        </div>
+    </div>
+    <div style="font-size:30px;background-color:#f2f3f4;padding:5px;border-radius:5px;width:fit-content;display:inline-block;margin:10px;">CopyRights For Alhassan Mohamed</div>
+</body>
+
+</html>
