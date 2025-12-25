@@ -7,7 +7,7 @@ def run(playwright):
 
     # Get the absolute path to the file
     cwd = os.getcwd()
-    file_path = f"file://{cwd}/table/index.html"
+    file_path = f"file://{cwd}/index.html"
 
     print(f"Navigating to {file_path}")
     page.goto(file_path)
