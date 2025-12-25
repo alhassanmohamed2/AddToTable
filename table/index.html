@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.min.js" defer></script>
-    <link rel="stylesheet" href="style.min.css" type="text/css">
-    <title>TP</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Order System</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
                 <div class="slider-div active">
 
                     <div class="be-block">
-                        <label for="">Between: </label>
+                        <label for="first-opt">Starter: </label>
                         <select name="" id="first-opt">
                         <option value="">TDI</option>
                         <option value="">TDM</option>
@@ -30,13 +30,13 @@
                     </select>
                     </div>
                     <div class="be-block">
-                        <label for="">Price : </label>
-                        <input type="number" class="prix-first" min="1">
+                        <label for="prix-first">Price: </label>
+                        <input type="number" id="prix-first" class="prix-first" min="1">
                     </div>
 
                     <div class="be-block">
-                        <label for="">No. Of Persons : </label>
-                        <input type="number" class="person-first" min="1">
+                        <label for="person-first">No. Of Persons: </label>
+                        <input type="number" id="person-first" class="person-first" min="1">
                     </div>
 
                 </div>
@@ -45,57 +45,59 @@
                 <div class="slider-div ">
 
                     <div class="be-block">
-                        <label for="">Plat : </label>
+                        <label for="second-opt">Dish: </label>
                         <select name="" id="second-opt">
-                    <option value="">Friture poissions</option>
-                    <option value="">Panini viande hâchée</option>
+                    <option value="">Fried Fish</option>
+                    <option value="">Minced Meat Panini</option>
                 </select>
                     </div>
                     <div class="be-block">
-                        <label for="">Price : </label>
-                        <input type="number" class="prix-second" min="1">
+                        <label for="prix-second">Price: </label>
+                        <input type="number" id="prix-second" class="prix-second" min="1">
                     </div>
                     <div class="be-block">
-                        <label for="">No. Of Persons : </label>
-                        <input type="number" class="person-second" min="1">
+                        <label for="person-second">No. Of Persons: </label>
+                        <input type="number" id="person-second" class="person-second" min="1">
                     </div>
                 </div>
                 <!-- ---------------------------------------------------------->
                 <div class="slider-div">
 
                     <div class="be-block">
-                        <label for="">Dessert : </label>
+                        <label for="third-opt">Dessert: </label>
                         <select name="" id="third-opt">
                     <option value="">Candy</option>
                     <option value="">Cream</option>
                 </select>
                     </div>
                     <div class="be-block">
-                        <label for="">Price : </label>
-                        <input type="number" class="prix-third" min="1">
+                        <label for="prix-third">Price: </label>
+                        <input type="number" id="prix-third" class="prix-third" min="1">
                     </div>
                     <div class="be-block">
-                        <label for="">No. Of Persons : </label>
-                        <input type="number" class="person-third" min="1">
+                        <label for="person-third">No. Of Persons: </label>
+                        <input type="number" id="person-third" class="person-third" min="1">
                     </div>
 
 
                 </div>
             </div>
-            <input type="button" value="ADD Order" class="action-btn">
-            <input type="button" value="Clear" class="action-btn clear">
+            <button class="action-btn">ADD Order</button>
+            <button class="action-btn clear">Clear</button>
 
             <table class="order-table">
-                <th>No. OF Order</th>
-                <th>Type</th>
-                <th>Quantite</th>
-                <th>Price</th>
+                <tr>
+                    <th>Order No.</th>
+                    <th>Type</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
             </table>
-            <input type="button" value="Calc Sum" class="sum">
+            <button class="sum">Calc Sum</button>
             <label for="" class="sum-lab"></label>
         </div>
     </div>
-    <div style="font-size:30px;background-color:#f2f3f4;padding:5px;border-radius:5px;width:fit-content;display:inline-block;margin:10px;">CopyRights For Alhassan Mohamed</div>
+    <div class="copyright">Copyright Alhassan Mohamed</div>
 </body>
 
 </html>
